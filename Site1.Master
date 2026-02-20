@@ -1,0 +1,58 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="LabProject_NurHamizahZahirah3118.Site1" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <link href="Styles/StyleSheet1.css" rel="stylesheet" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server" class="fontForm">
+        <img src="Images/sam-online-banner.jpg" class="banner"/>
+        <div class="header">
+            <a href="Default.aspx">Home</a> &nbsp;|&nbsp;
+            <a href="https://www.unikl.edu.my" target="_blank">UniKL Web Site</a> &nbsp;|&nbsp;
+            <a href="https://portal.unikl.edu.my" target="_blank">UniKL Portal</a> &nbsp;|&nbsp;
+            <a href="https://login.microsoftonline.com" target="_blank">Microsoft Online</a>
+        </div>
+        <div class="leftMenuColumn">
+            <asp:HyperLink ID="HyperLink1" runat="server" CssClass="leftMenuLink"
+                NavigateUrl="~/WebFormBird.aspx">Bird Page</asp:HyperLink>
+            <br />
+            <asp:HyperLink ID="HyperLink2" runat="server" CssClass="leftMenuLink"
+                NavigateUrl="~/WebFormDog.aspx">Dog Page</asp:HyperLink>
+            <br />
+            <asp:HyperLink ID="HyperLink3" runat="server" CssClass="leftMenuLink"
+                NavigateUrl="~/WebFormRabbit.aspx">Rabbit Page</asp:HyperLink>
+            <br />
+            <asp:HyperLink ID="HyperLink4" runat="server" CssClass="leftMenuLink"
+                NavigateUrl="~/WebForm1209.aspx">Hello Page</asp:HyperLink>
+            <br />
+            <asp:HyperLink ID="HyperLink5" runat="server" CssClass="leftMenuLink"
+                NavigateUrl="~/WebForm2209.aspx">Temperature Page</asp:HyperLink>
+            <br />
+            <asp:HyperLink ID="HyperLink6" runat="server" CssClass="leftMenuLink"
+                NavigateUrl="~/WebForm3209.aspx">Mark & Grade Page</asp:HyperLink>
+             <br />
+            <asp:HyperLink ID="HyperLink7" runat="server" CssClass="leftMenuLink"
+                NavigateUrl="~/WebForm4209.aspx">Multiple Choice Page</asp:HyperLink>
+             <br />
+            <asp:HyperLink ID="HyperLink8" runat="server" CssClass="leftMenuLink"
+                NavigateUrl="~/WebForm5209.aspx">Favourite Pet Page</asp:HyperLink>
+             <br />
+            <asp:HyperLink ID="HyperLink9" runat="server" CssClass="leftMenuLink"
+                NavigateUrl="~/WebForm6a209.aspx">Registration Page</asp:HyperLink>
+            <br />
+             <asp:HyperLink ID="HyperLink10" runat="server" CssClass="leftMenuLink"
+                NavigateUrl="~/WebForm7209.aspx">Average and BMI Page</asp:HyperLink>
+        </div>
+        <div class="content">
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+</body>
+</html>
